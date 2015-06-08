@@ -1,17 +1,269 @@
-symbol $fototran = C.2
-symbol $ir_led = C.1
-symbol $input = w0
-symbol $output = w1
+symbol foto = C.2
+symbol led = C.1
+symbol in = w0
+symbol out = w1
+symbol 0 = low led
+symbol 1 = high led
 
 tx:
-	sertxd($input)
-	high $ir_led
-	pause 50
-	low $ir_led
+	sertxd(in)
+	select case in
+		case "A"
+			0
+			0
+			0
+			0
+			1
+		case "B"
+			0
+			0
+			0
+			0
+			1
+			0
+		case "C"
+			0
+			0
+			0
+			0
+			1
+			1
+		case "D"
+			0
+			0
+			0
+			1
+			0
+			0
+		case "E"
+			0
+			0
+			0
+			1
+			0
+			1
+		case "F"
+			0
+			0
+			0
+			1
+			1
+			0
+		case "G"
+			0
+			0
+			0
+			1
+			1
+			1
+		case "H"
+			0
+			0
+			1
+			0
+			0
+			0
+		case "I"
+			0
+			0
+			1
+			0
+			0
+			1
+		case "J"
+			0
+			0
+			1
+			0
+			1
+			0
+		case "K"
+			0
+			0
+			1
+			0
+			1
+			1
+		case "L"
+			0
+			0
+			1
+			1
+			0
+			0
+		case "M"
+			0
+			0
+			1
+			1
+			0
+			1
+		case "N"
+			0
+			0
+			1
+			1
+			1
+			0
+		case "O"
+			0
+			0
+			1
+			1
+			1
+			1
+		case "P"
+			0
+			1
+			0
+			0
+			0
+			0
+		case "Q"
+			0
+			1
+			0
+			0
+			0
+			1
+		case "R"
+			0
+			1
+			0
+			0
+			1
+			0
+		case "S"
+			0
+			1
+			0
+			0
+			1
+			1
+		case "T"
+			0
+			1
+			0
+			1
+			0
+			0
+		case "U"
+			0
+			1
+			0
+			1
+			0
+			1
+		case "V"
+			0
+			1
+			0
+			1
+			1
+			0
+		case "W"
+			0
+			1
+			0
+			1
+			1
+			1
+		case "X"
+			0
+			1
+			1
+			0
+			0
+			0
+		case "Y"
+			0
+			1
+			1
+			0
+			0
+			1
+		case "Z"
+			0
+			1
+			1
+			0
+			1
+			0
+		case "0"
+			0
+			1
+			1
+			0
+			1
+			1
+		case "1"
+			0
+			1
+			1
+			1
+			0
+			0
+		case "2"
+			0
+			1
+			1
+			1
+			0
+			1
+		case "3"
+			0
+			1
+			1
+			1
+			1
+			0
+		case "4"
+			0
+			1
+			1
+			1
+			1
+			1
+		case "5"
+			1
+			0
+			0
+			0
+			0
+			0
+		case "6"
+			1
+			0
+			0
+			0
+			0
+			1
+		case "7"
+			1
+			0
+			0
+			0
+			1
+			0
+		case "8"
+			1
+			0
+			0
+			0
+			1
+			1
+		case "9"
+			1
+			0
+			0
+			1
+			0
+			0
+	endselect
 	goto tx
 
 rx:
 	; Přečte hodnotu napětí na výstupním pinu fototranzostotu
-	readadc10 $fototran, $output
-	serrxd(#$output)
+	readadc10 foto, out
+	serrxd($out)
 	goto rx
