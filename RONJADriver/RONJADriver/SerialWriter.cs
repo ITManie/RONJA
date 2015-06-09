@@ -7,7 +7,7 @@ namespace RONJADriver
     {
         public SerialWriter(string port)
         {
-            Port = new SerialPort(port);
+            Port = new SerialPort(port, 4800, Parity.None, 8);
             if (Port.IsOpen == false)
             {
                 Port.Open();

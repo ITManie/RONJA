@@ -168,14 +168,14 @@ namespace RONJADriver
             }
 
         }
-        public char[] Encode(char character)  //Pro pohodlí
+        public char[] EncodeToChars(char character)  //Pro pohodlí
         {
             string code = Encode(character);
             return code.ToCharArray();
         }
         public char Decode(string code)
         {
-
+            throw new NotImplementedException();
         }
     }
 }
