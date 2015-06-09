@@ -1,14 +1,14 @@
 symbol foto = C.2
-symbol led = C.1
 symbol in = w0
 symbol out = w1
-symbol 0 = low led
-symbol 1 = high led
+symbol 0 = low C.1
+symbol 1 = high C.1
 
 tx:
 	sertxd(in)
 	select case in
 		case "A"
+			0
 			0
 			0
 			0
@@ -264,6 +264,9 @@ tx:
 
 rx:
 	; Přečte hodnotu napětí na výstupním pinu fototranzostotu
-	readadc10 foto, out
-	serrxd($out)
+	if readadc10 foto, out > 180 then
+		serrxd(1)
+	else:
+		serrxd(0)
+	endif
 	goto rx
