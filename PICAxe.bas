@@ -259,14 +259,100 @@ tx:
 			1
 			0
 			0
+		case "+"
+			1
+			0
+			0
+			1
+			0
+			1
+		case "-"
+			1
+			0
+			0
+			1
+			1
+			0
+		case "*"
+			1
+			0
+			0
+			1
+			1
+			1
+		case "/"
+			1
+			0
+			1
+			0
+			0
+			0
+		case "="
+			1
+			0
+			1
+			0
+			0
+			1
+		case "."
+			1
+			0
+			1
+			0
+			1
+			0
+		case ","
+			1
+			0
+			1
+			0
+			1
+			1
+		case ":"
+			1
+			0
+			1
+			1
+			0
+			0
+		case "?"
+			1
+			0
+			1
+			1
+			0
+			1
+		case "!"
+			1
+			0
+			1
+			0
+			1
+			0
+		case ";"
+			1
+			0
+			1
+			0
+			1
+			1
+		case "START"
+			1
+			1
+			1
+			1
+			1
+			1
+		case "42"
+			serrxd("the answer to life the universe and everything")
 	endselect
 	goto tx
 
 rx:
 	; Přečte hodnotu napětí na výstupním pinu fototranzostotu
 	if readadc10 foto, out > 180 then
-		serrxd(1)
+		serrxd("1")
 	else:
-		serrxd(0)
+		serrxd("0")
 	endif
 	goto rx
