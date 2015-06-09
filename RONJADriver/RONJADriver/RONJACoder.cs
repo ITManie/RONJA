@@ -161,6 +161,50 @@ namespace RONJADriver
                     {
                         return "100100";
                     }
+                case '+':
+                    {
+                        return "100101";
+                    }
+                case '-':
+                    {
+                        return "100110";
+                    }
+                case '*':
+                    {
+                        return "100111";
+                    }
+                case '/':
+                    {
+                        return "101000";
+                    }
+                case '=':
+                    {
+                        return "101001";
+                    }
+                case '.':
+                    {
+                        return "101010";
+                    }
+                case ',':
+                    {
+                        return "101011";
+                    }
+                case ':':
+                    {
+                        return "101100";
+                    }
+                case '?':
+                    {
+                        return "101101";
+                    }
+                case '!':
+                    {
+                        return "101110";
+                    }
+                case ';':
+                    {
+                        return "101111";
+                    }
                 default:
                     {
                         throw new IndexOutOfRangeException();  //Není nějaká vhodnější výjimka?
