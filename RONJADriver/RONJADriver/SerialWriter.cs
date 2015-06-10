@@ -24,16 +24,34 @@ namespace RONJADriver
         }
         public void SendTypedData()
         {
+            bool exit = false;
             while (true)
             {
                 string data = null;
                 Console.Write("TX: ");
                 data = Console.ReadLine();
-                if (data == "/quit")
+                switch(data)
                 {
+                    case "/quit":
+                        {
+                            exit = true;
+                            break;
+                        }
+                    /*case "/rx":
+                        {
+                            
+                            break;
+                        }*/
+                    default:
+                        {
+                            SendData(data);
+                            break;
+                        }
+                }
+                if (exit == true)
+                { 
                     break;
                 }
-                SendData(data);
             }
         }
     }

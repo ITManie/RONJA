@@ -34,13 +34,11 @@ namespace RONJADriver
             if (Port.IsOpen == false)
             {
                 Console.WriteLine("Opening port {0}", Port.PortName);
-                Port.Open();
             }
             Console.WriteLine("Port {0} opened!", Port.PortName);
         }
 		public string GetData() //Příjem dat, důvod této třídy. V budoucích verzích sloučit se SerialWriterem()
 		{
-            Open();
 			return Port.ReadLine();
 		}
 		public void PrintData(int lines)  //Příjem dat a jejich následné tištění přímo na konzolový výstup
@@ -48,7 +46,6 @@ namespace RONJADriver
 			int line = 0;
 			while (lines > line)
 			{
-                Open();
 				Console.WriteLine("RX: {0}", GetData());
 				Thread.Sleep(100);
 				line++;
@@ -56,7 +53,6 @@ namespace RONJADriver
 		}
 		public void PrintData()  //To samé, jen s jedním řádkem
 		{
-            Open();
 			Console.WriteLine("RX: {0}", GetData());
 		}
 	}

@@ -6,204 +6,205 @@ namespace RONJADriver
     {
         public RONJACoder()
         {
+
         }
         private string Data
         {
             get;
             set;
         }
-        public string Encode(char character)  //Tahle metoda zakǒduje znak do "RONJovštiny"
+        public char Decode(string character)  //Tahle metoda rozkóduje znak z "RONJovštiny"
         {
-            character = Char.ToUpper(character);
+            character = character.ToUpper();
             switch (character)  //Masové koule došly...
             {
-                case 'A':
+                case "000001":
                     {
-                        return "000001";
+                        return 'A';
                     }
-                case 'B':
+                case "000010":
                     {
-                        return "000010";
+                        return 'B';
                     }
-                case 'C':
+                case "000011":
                     {
-                        return "000011";
+                        return 'C';
                     }
-                case 'D':
+                case "000100":
                     {
-                        return "000100";
+                        return 'D';
                     }
-                case 'E':
+                case "000101":
                     {
-                        return "000101";
+                        return 'E';
                     }
-                case 'F':
+                case "000110":
                     {
-                        return "000110";
+                        return 'F';
                     }
-                case 'G':
+                case "000111":
                     {
-                        return "000111";
+                        return 'G';
                     }
-                case 'H':
+                case "001000":
                     {
-                        return "001000";
+                        return 'H';
                     }
-                case 'I':
+                case "001001":
                     {
-                        return "001001";
+                        return 'I';
                     }
-                case 'J':
+                case "001010":
                     {
-                        return "001010";
+                        return 'J';
                     }
-                case 'K':
+                case "001011":
                     {
-                        return "001011";
+                        return 'K';
                     }
-                case 'L':
+                case "001100":
                     {
-                        return "001100";
+                        return 'L';
                     }
-                case 'M':
+                case "001101":
                     {
-                        return "001101";
+                        return 'M';
                     }
-                case 'N':
+                case "001110":
                     {
-                        return "001110";
+                        return 'N';
                     }
-                case 'O':
+                case "001111":
                     {
-                        return "001111";
+                        return 'O';
                     }
-                case 'P':
+                case "010000":
                     {
-                        return "010000";
+                        return 'P';
                     }
-                case 'Q':
+                case "010001":
                     {
-                        return "010001";
+                        return 'Q';
                     }
-                case 'R':
+                case "010010":
                     {
-                        return "010010";
+                        return 'R';
                     }
-                case 'S':
+                case "010011":
                     {
-                        return "010011";
+                        return 'S';
                     }
-                case 'T':
+                case "010100":
                     {
-                        return "010100";
+                        return 'T';
                     }
-                case 'U':
+                case "010101":
                     {
-                        return "010101";
+                        return 'U';
                     }
-                case 'V':
+                case "010110":
                     {
-                        return "010110";
+                        return 'V';
                     }
-                case 'W':
+                case "010111":
                     {
-                        return "010111";
+                        return 'W';
                     }
-                case 'X':
+                case "011000":
                     {
-                        return "011000";
+                        return 'X';
                     }
-                case 'Y':
+                case "011001":
                     {
-                        return "011001";
+                        return 'Y';
                     }
-                case 'Z':
+                case "011010":
                     {
-                        return "011010";
+                        return 'Z';
                     }
-                case '0':
+                case "011011":
                     {
-                        return "011011";
+                        return '0';
                     }
-                case '1':
+                case "011100":
                     {
-                        return "011100";
+                        return '1';
                     }
-                case '2':
+                case "011101":
                     {
-                        return "011101";
+                        return '2';
                     }
-                case '3':
+                case "011110":
                     {
-                        return "011110";
+                        return '3';
                     }
-                case '4':
+                case "011111":
                     {
-                        return "011111";
+                        return '4';
                     }
-                case '5':
+                case "100000":
                     {
-                        return "100000";
+                        return '5';
                     }
-                case '6':
+                case "100001":
                     {
-                        return "100001";
+                        return '6';
                     }
-                case '7':
+                case "100010":
                     {
-                        return "100010";
+                        return '7';
                     }
-                case '8':
+                case "100011":
                     {
-                        return "100011";
+                        return '8';
                     }
-                case '9':
+                case "100100":
                     {
-                        return "100100";
+                        return '9';
                     }
-                case '+':
+                case "100101":
                     {
-                        return "100101";
+                        return '+';
                     }
-                case '-':
+                case "100110":
                     {
-                        return "100110";
+                        return '-';
                     }
-                case '*':
+                case "100111":
                     {
-                        return "100111";
+                        return '*';
                     }
-                case '/':
+                case "101000":
                     {
-                        return "101000";
+                        return '/';
                     }
-                case '=':
+                case "101001":
                     {
-                        return "101001";
+                        return '=';
                     }
-                case '.':
+                case "101010":
                     {
-                        return "101010";
+                        return '.';
                     }
-                case ',':
+                case "101011":
                     {
-                        return "101011";
+                        return ',';
                     }
-                case ':':
+                case "101100":
                     {
-                        return "101100";
+                        return ':';
                     }
-                case '?':
+                case "101101":
                     {
-                        return "101101";
+                        return '?';
                     }
-                case '!':
+                case "101110":
                     {
-                        return "101110";
+                        return '!';
                     }
-                case ';':
+                case "101111":
                     {
-                        return "101111";
+                        return ';';
                     }
                 default:
                     {
@@ -211,15 +212,6 @@ namespace RONJADriver
                     }
             }
 
-        }
-        public char[] EncodeToChars(char character)  //Pro pohodlí
-        {
-            string code = Encode(character);
-            return code.ToCharArray();
-        }
-        public char Decode(string code)
-        {
-            throw new NotImplementedException();
         }
     }
 }

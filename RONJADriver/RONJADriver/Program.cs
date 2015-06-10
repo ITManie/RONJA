@@ -29,7 +29,7 @@ namespace RONJADriver
 			Console.WriteLine();
             try
             {
-                Choice(mode, port, 10);
+                Choice(mode, port, 100);
             }
             catch (Exception e)
             {
