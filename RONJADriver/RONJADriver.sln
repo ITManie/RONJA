@@ -148,6 +148,6 @@ Global
 		$24.IncludeInstanceMembers = True
 		$24.IncludeStaticEntities = True
 		description = Debug release of RONJA driver.
-		version = 15w23a
+		version = 1.0.0
 	EndGlobalSection
 EndGlobal
