@@ -3,10 +3,11 @@ symbol tranzistor = C.2
 
 start:
 	; Přečte hodnotu napětí na výstupním pinu fototranzistoru
-	readadc10 tranzistor, vystup
-	if #vystup > 500 then
-		serrxd("1")
-	else:
-		serrxd("0")
+	readadc tranzistor, vystup
+	if vystup > 50  then
+		sertxd("1")
+	else
+		sertxd("0")
 	endif
+	goto start
 
