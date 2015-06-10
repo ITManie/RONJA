@@ -32,17 +32,17 @@ namespace RONJADriver
                 data = Console.ReadLine();
                 switch(data)
                 {
-                    case "/quit":
+                    case "/quit":  //Konec
                         {
                             exit = true;
                             break;
                         }
-                    /*case "/rx":
+                    /*case "/rx":  //Skok na jeden řádek přijímání
                         {
                             
                             break;
                         }*/
-                    default:
+                    default:  //Poslání dat
                         {
                             SendData(data);
                             break;

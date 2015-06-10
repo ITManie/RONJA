@@ -2,22 +2,20 @@ using System;
 
 namespace RONJADriver
 {
-    public class RONJACoder  //Třída na zakódování a rozkódování dat pro RONJu
+    public class RONJACoder  //Třída na rozkódování dat pro RONJu
     {
-        public RONJACoder()
+        const int letterLenght = 6; //Délka jednoho znaku v bitech
+        public RONJACoder()  //Konstruktor může zůstat prázdný, protože všechny metody jsou statické
         {
-
         }
-        private string Data
+        private static char Decode(string character)  //Tahle metoda rozkóduje znak z "RONJovštiny"
         {
-            get;
-            set;
-        }
-        public char Decode(string character)  //Tahle metoda rozkóduje znak z "RONJovštiny"
-        {
-            character = character.ToUpper();
             switch (character)  //Masové koule došly...
             {
+                case "000000":
+                    {
+                        return ' ';
+                    }
                 case "000001":
                     {
                         return 'A';
@@ -213,6 +211,39 @@ namespace RONJADriver
             }
 
         }
+        public static string GetMessage(string data)  //Tato metoda mění jedničky a nuly na čitelnou zprávu
+        {
+            string message = "";  //Hotová zpráva
+            char[] letters = new char[data.Length / letterLenght]; //Jednotlivá písmena
+            if ((data.Length % letterLenght) != 0)  //Pokud délka dat nezle vydělit délkou znaku, je něco špatně
+            {
+                throw new ArgumentException("Bits missing");
+            }
+            char[] bits = data.ToCharArray();  //Bity v poli
+            string[] bytes = new string[letters.Length];  //Bajty v poli
+            int word = 1;  //Do kterého slova se bude přičítat bit?
+            for (int cyklus = 1; cyklus <= bits.Length; cyklus++)
+            {
+                if (cyklus % letterLenght == 1 && cyklus != 1)
+                {
+                    word++;
+                }
+                bytes[word - 1] = String.Concat(bytes[word - 1], bits[cyklus - 1].ToString()); //Připojení bitu ke slovu, -1 kvůli jinému číslování polí
+            }
+            word = 1; //Reset proměnné pro další cyklus
+            foreach (string codedLetter in bytes)
+            {
+                letters[word - 1] = Decode(codedLetter);
+                word++;
+            }
+            word = 1;
+            foreach (char doneLetter in letters)
+            {
+                message = String.Concat(message, doneLetter.ToString());
+            }
+            return message;
+        }
+
     }
 }
 

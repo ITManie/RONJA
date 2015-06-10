@@ -46,14 +46,14 @@ namespace RONJADriver
 			int line = 0;
 			while (lines > line)
 			{
-				Console.WriteLine("RX: {0}", GetData());
+				Console.WriteLine("RX: {0}", RONJACoder.GetMessage(GetData()));
 				Thread.Sleep(100);
 				line++;
 			}
 		}
 		public void PrintData()  //To samé, jen s jedním řádkem
 		{
-			Console.WriteLine("RX: {0}", GetData());
+            Console.WriteLine("RX: {0}", RONJACoder.GetMessage(GetData()));
 		}
 	}
 }
