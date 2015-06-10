@@ -340,7 +340,5 @@ start:
 			low led
 			low led
 			low led
-		case 42
-			sertxd("the answer to life the universe and everything")
 	endselect
 	goto start
