@@ -2,353 +2,345 @@ symbol vstup = w0
 symbol led = C.1
 
 start:
-	sertxd(vstup)
+	serrxd(vstup)
 	select case vstup
 		case "A"
-			off
-			off
-			off
-			off
-			off
-			on
+			low led
+			low led
+			low led
+			low led
+			low led
+			high led
 		case "B"
-			off
-			off
-			off
-			off
-			on
-			off
+			low led
+			low led
+			low led
+			low led
+			high led
+			low led
 		case "C"
-			off
-			off
-			off
-			off
-			on
-			on
+			low led
+			low led
+			low led
+			low led
+			high led
+			high led
 		case "D"
-			off
-			off
-			off
-			on
-			off
-			off
+			low led
+			low led
+			low led
+			high led
+			low led
+			low led
 		case "E"
-			off
-			off
-			off
-			on
-			off
-			on
+			low led
+			low led
+			low led
+			high led
+			low led
+			high led
 		case "F"
-			off
-			off
-			off
-			on
-			on
-			off
+			low led
+			low led
+			low led
+			high led
+			high led
+			low led
 		case "G"
-			off
-			off
-			off
-			on
-			on
-			on
+			low led
+			low led
+			low led
+			high led
+			high led
+			high led
 		case "H"
-			off
-			off
-			on
-			off
-			off
-			off
+			low led
+			low led
+			high led
+			low led
+			low led
+			low led
 		case "I"
-			off
-			off
-			on
-			off
-			off
-			on
+			low led
+			low led
+			high led
+			low led
+			low led
+			high led
 		case "J"
-			off
-			off
-			on
-			off
-			on
-			off
+			low led
+			low led
+			high led
+			low led
+			high led
+			low led
 		case "K"
-			off
-			off
-			on
-			off
-			on
-			on
+			low led
+			low led
+			high led
+			low led
+			high led
+			high led
 		case "L"
-			off
-			off
-			on
-			on
-			off
-			off
+			low led
+			low led
+			high led
+			high led
+			low led
+			low led
 		case "M"
-			off
-			off
-			on
-			on
-			off
-			on
+			low led
+			low led
+			high led
+			high led
+			low led
+			high led
 		case "N"
-			off
-			off
-			on
-			on
-			on
-			off
+			low led
+			low led
+			high led
+			high led
+			high led
+			low led
 		case "O"
-			off
-			off
-			on
-			on
-			on
-			on
+			low led
+			low led
+			high led
+			high led
+			high led
+			high led
 		case "P"
-			off
-			on
-			off
-			off
-			off
-			off
+			low led
+			high led
+			low led
+			low led
+			low led
+			low led
 		case "Q"
-			off
-			on
-			off
-			off
-			off
-			on
+			low led
+			high led
+			low led
+			low led
+			low led
+			high led
 		case "R"
-			off
-			on
-			off
-			off
-			on
-			off
+			low led
+			high led
+			low led
+			low led
+			high led
+			low led
 		case "S"
-			off
-			on
-			off
-			off
-			on
-			on
+			low led
+			high led
+			low led
+			low led
+			high led
+			high led
 		case "T"
-			off
-			on
-			off
-			on
-			off
-			off
+			low led
+			high led
+			low led
+			high led
+			low led
+			low led
 		case "U"
-			off
-			on
-			off
-			on
-			off
-			on
+			low led
+			high led
+			low led
+			high led
+			low led
+			high led
 		case "V"
-			off
-			on
-			off
-			on
-			on
-			off
+			low led
+			high led
+			low led
+			high led
+			high led
+			low led
 		case "W"
-			off
-			on
-			off
-			on
-			on
-			on
+			low led
+			high led
+			low led
+			high led
+			high led
+			high led
 		case "X"
-			off
-			on
-			on
-			off
-			off
-			off
+			low led
+			high led
+			high led
+			low led
+			low led
+			low led
 		case "Y"
-			off
-			on
-			on
-			off
-			off
-			on
+			low led
+			high led
+			high led
+			low led
+			low led
+			high led
 		case "Z"
-			off
-			on
-			on
-			off
-			on
-			off
+			low led
+			high led
+			high led
+			low led
+			high led
+			low led
 		case "0"
-			off
-			on
-			on
-			off
-			on
-			on
+			low led
+			high led
+			high led
+			low led
+			high led
+			high led
 		case "1"
-			off
-			on
-			on
-			on
-			off
-			off
+			low led
+			high led
+			high led
+			high led
+			low led
+			low led
 		case "2"
-			off
-			on
-			on
-			on
-			off
-			on
+			low led
+			high led
+			high led
+			high led
+			low led
+			high led
 		case "3"
-			off
-			on
-			on
-			on
-			on
-			off
+			low led
+			high led
+			high led
+			high led
+			high led
+			low led
 		case "4"
-			off
-			on
-			on
-			on
-			on
-			on
+			low led
+			high led
+			high led
+			high led
+			high led
+			high led
 		case "5"
-			on
-			off
-			off
-			off
-			off
-			off
+			high led
+			low led
+			low led
+			low led
+			low led
+			low led
 		case "6"
-			on
-			off
-			off
-			off
-			off
-			on
+			high led
+			low led
+			low led
+			low led
+			low led
+			high led
 		case "7"
-			on
-			off
-			off
-			off
-			on
-			off
+			high led
+			low led
+			low led
+			low led
+			high led
+			low led
 		case "8"
-			on
-			off
-			off
-			off
-			on
-			on
+			high led
+			low led
+			low led
+			low led
+			high led
+			high led
 		case "9"
-			on
-			off
-			off
-			on
-			off
-			off
+			high led
+			low led
+			low led
+			high led
+			low led
+			low led
 		case "+"
-			on
-			off
-			off
-			on
-			off
-			on
+			high led
+			low led
+			low led
+			high led
+			low led
+			high led
 		case "-"
-			on
-			off
-			off
-			on
-			on
-			off
+			high led
+			low led
+			low led
+			high led
+			high led
+			low led
 		case "*"
-			on
-			off
-			off
-			on
-			on
-			on
+			high led
+			low led
+			low led
+			high led
+			high led
+			high led
 		case "/"
-			on
-			off
-			on
-			off
-			off
-			off
+			high led
+			low led
+			high led
+			low led
+			low led
+			low led
 		case "="
-			on
-			off
-			on
-			off
-			off
-			on
+			high led
+			low led
+			high led
+			low led
+			low led
+			high led
 		case "."
-			on
-			off
-			on
-			off
-			on
-			off
+			high led
+			low led
+			high led
+			low led
+			high led
+			low led
 		case ","
-			on
-			off
-			on
-			off
-			on
-			on
+			high led
+			low led
+			high led
+			low led
+			high led
+			high led
 		case ":"
-			on
-			off
-			on
-			on
-			off
-			off
+			high led
+			low led
+			high led
+			high led
+			low led
+			low led
 		case "?"
-			on
-			off
-			on
-			on
-			off
-			on
+			high led
+			low led
+			high led
+			high led
+			low led
+			high led
 		case "!"
-			on
-			off
-			on
-			on
-			on
-			off
+			high led
+			low led
+			high led
+			high led
+			high led
+			low led
 		case ";"
-			on
-			off
-			on
-			on
-			on
-			on
-		case "START"
-			on
-			on
-			on
-			on
-			on
-			on
-		case "42"
-			serrxd("the answer to life the universe and everything")
+			high led
+			low led
+			high led
+			high led
+			high led
+			high led
+		case " "
+			low led
+			low led
+			low led
+			low led
+			low led
+			low led
+		case 42
+			sertxd("the answer to life the universe and everything")
 	endselect
-	goto start
-
-on:
-	high led
-	goto start
-
-off:
-	low led
 	goto start
