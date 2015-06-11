@@ -1,33 +1,33 @@
-symbol vstup = w0
+symbol vstup = b0
 symbol led = C.1
 
 start:
-	serrxd(vstup)
-	if vstup = "A" then
+	serrxd vstup
+	if vstup = 65 then
 		low led
 		pause 250
 		high led
 		pause 50
-	else if vstup = "B" then
+	else if vstup = 66 then
 		low led
 		pause 200
 		high led
 		pause 50
 		low led
 		pause 50
-	else if vstup = "C" then
+	else if vstup = 67 then
 		low led
 		pause 200
 		high led
 		pause 100
-	else if vstup = "D" then
+	else if vstup = 68 then
 		low led
 		pause 150
 		high led
 		pause 50
 		low led
 		pause 100
-	else if vstup = "E" then
+	else if vstup = 69 then
 		low led
 		pause 150
 		high led
@@ -36,26 +36,26 @@ start:
 		pause 50
 		high led
 		pause 50
-	else if vstup = "F" then
+	else if vstup = 70 then
 		low led
 		pause 150
 		high led
 		pause 100
 		low led
 		pause 50
-	else if vstup = "G" then
+	else if vstup = 71 then
 		low led
 		pause 150
 		high led
 		pause 150
-	else if vstup = "H" then
+	else if vstup = 72 then
 		low led
 		pause 100
 		high led
 		pause 50
 		low led
 		pause 150
-	else if vstup = "I" then
+	else if vstup = 73 then
 		low led
 		pause 100
 		high led
@@ -64,7 +64,7 @@ start:
 		pause 100
 		high led
 		pause 50
-	else if vstup = "J" then
+	else if vstup = 74 then
 		low led
 		pause 100
 		high led
@@ -75,7 +75,7 @@ start:
 		pause 50
 		low led
 		pause 50
-	else if vstup = "K" then
+	else if vstup = 75 then
 		low led
 		pause 100
 		high led
@@ -84,14 +84,14 @@ start:
 		pause 50
 		high led
 		pause 100
-	else if vstup = "L" then
+	else if vstup = 76 then
 		low led
 		pause 100
 		high led
 		pause 100
 		low led
 		pause 100
-	else if vstup = "M" then
+	else if vstup = 77 then
 		low led
 		pause 100
 		high led
@@ -100,39 +100,50 @@ start:
 		pause 50
 		high led
 		pause 50
-	else if vstup = "N" then
-		low led
-		pause 100
-		high led
-		pause 150
-		low led
-		pause 50
-	else if vstup = "O" then
+	else if vstup = 78 then
 		low led
 		pause 100
 		high led
 		pause 150
-		high led
-		pause 50
-	else if vstup = "P" then
 		low led
 		pause 50
-		high led
-		pause 50
+	else if vstup = 79 then
 		low led
+		pause 100
+		high led
 		pause 150
-		low led
+		high led
 		pause 50
-	else if vstup = "Q" then
+	else if vstup = 80 then
 		low led
 		pause 50
 		high led
 		pause 50
 		low led
 		pause 150
+		low led
+		pause 50
+	else if vstup = 81 then
+		low led
+		pause 50
 		high led
 		pause 50
-	else if vstup = "R" then
+		low led
+		pause 150
+		high led
+		pause 50
+	else if vstup = 82 then
+		low led
+		pause 50
+		high led
+		pause 50
+		low led
+		pause 100
+		high led
+		pause 50
+		low led
+		pause 50
+	else if vstup = 83 then
 		low led
 		pause 50
 		high led
@@ -140,19 +151,8 @@ start:
 		low led
 		pause 100
 		high led
-		pause 50
-		low led
-		pause 50
-	else if vstup = "S" then
-		low led
-		pause 50
-		high led
-		pause 50
-		low led
 		pause 100
-		high led
-		pause 100
-	else if vstup = "T" then
+	else if vstup = 84 then
 		low led
 		pause 50
 		high led
@@ -163,7 +163,7 @@ start:
 		pause 50
 		low led
 		pause 100
-	else if vstup = "U" then
+	else if vstup = 85 then
 		low led
 		pause 50
 		high led
@@ -176,7 +176,7 @@ start:
 		pause 50
 		high led
 		pause 50
-	else if vstup = "V" then
+	else if vstup = 86 then
 		low led
 		pause 50
 		high led
@@ -187,7 +187,7 @@ start:
 		pause 100
 		low led
 		pause 50
-	else if vstup = "W" then
+	else if vstup = 87 then
 		low led
 		pause 50
 		high led
@@ -196,14 +196,14 @@ start:
 		pause 50
 		high led
 		pause 150
-	else if vstup = "X" then
+	else if vstup = 88 then
 		low led
 		pause 50
 		high led
 		pause 100
 		low led
 		pause 150
-	else if vstup = "Y" then
+	else if vstup = 89 then
 		low led
 		pause 50
 		high led
@@ -212,7 +212,7 @@ start:
 		pause 100
 		high led
 		pause 50
-	else if vstup = "Z" then
+	else if vstup = 90 then
 		low led
 		pause 50
 		high led
@@ -223,7 +223,7 @@ start:
 		pause 50
 		low led
 		pause 50
-	else if vstup = "0" then
+	else if vstup = 48 then
 		low led
 		pause 50
 		high led
@@ -232,14 +232,14 @@ start:
 		pause 50
 		high led
 		pause 100
-	else if vstup = "1" then
+	else if vstup = 49 then
 		low led
 		pause 50
 		high led
 		pause 150
 		low led
 		pause 100
-	else if vstup = "2" then
+	else if vstup = 50 then
 		low led
 		pause 50
 		high led
@@ -248,7 +248,7 @@ start:
 		pause 50
 		high led
 		pause 50
-	else if vstup = "3" then
+	else if vstup = 51 then
 		low led
 		pause 50
 		high led
@@ -257,21 +257,21 @@ start:
 		pause 50
 		low led
 		pause 50
-	else if vstup = "4" then
+	else if vstup = 52 then
 		low led
 		pause 50
 		high led
 		pause 150
 		high led
 		pause 100
-	else if vstup = "5" then
+	else if vstup = 53 then
 		high led
 		pause 50
 		low led
 		pause 150
 		low led
 		pause 100
-	else if vstup = "6" then
+	else if vstup = 54 then
 		high led
 		pause 50
 		low led
@@ -280,7 +280,7 @@ start:
 		pause 50
 		high led
 		pause 50
-	else if vstup = "7" then
+	else if vstup = 55 then
 		high led
 		pause 50
 		low led
@@ -289,14 +289,14 @@ start:
 		pause 50
 		low led
 		pause 50
-	else if vstup = "8" then
+	else if vstup = 56 then
 		high led
 		pause 50
 		low led
 		pause 150
 		high led
 		pause 100
-	else if vstup = "9" then
+	else if vstup = 57 then
 		high led
 		pause 50
 		low led
@@ -305,7 +305,7 @@ start:
 		pause 50
 		low led
 		pause 100
-	else if vstup = "+" then
+	else if vstup = 43 then
 		high led
 		pause 50
 		low led
@@ -316,7 +316,7 @@ start:
 		pause 50
 		high led
 		pause 50
-	else if vstup = "-" then
+	else if vstup = 45 then
 		high led
 		pause 50
 		low led
@@ -325,14 +325,14 @@ start:
 		pause 100
 		low led
 		pause 50
-	else if vstup = "*" then
+	else if vstup = 42 then
 		high led
 		pause 50
 		low led
 		pause 100
 		high led
 		pause 150
-	else if vstup = "/" then
+	else if vstup = 47 then
 		high led
 		pause 50
 		low led
@@ -341,7 +341,7 @@ start:
 		pause 50
 		low led
 		pause 150
-	else if vstup = "=" then
+	else if vstup = 61 then
 		high led
 		pause 50
 		low led
