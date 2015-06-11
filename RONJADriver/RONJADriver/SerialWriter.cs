@@ -20,7 +20,12 @@ namespace RONJADriver
         }
         public void SendData(string data)
         {
-            Port.Write(data);
+            char[] letters = data.ToCharArray();
+            foreach (char letter in letters)
+            {
+                Port.Write(letter.ToString());
+            }
+            Port.WriteLine("");
         }
         public void SendTypedData()
         {

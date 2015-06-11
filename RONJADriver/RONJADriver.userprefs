@@ -3,10 +3,17 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="RONJADriver/Program.cs">
     <Files>
+<<<<<<< f5b76e528cbe23235bbd2d13eb30fec0fe48d715
       <File FileName="RONJADriver/Program.cs" Line="7" Column="3" />
       <File FileName="RONJADriver/SerialReader.cs" Line="1" Column="1" />
       <File FileName="RONJADriver/SerialWriter.cs" Line="1" Column="1" />
       <File FileName="RONJADriver/RONJACoder.cs" Line="1" Column="1" />
+=======
+      <File FileName="RONJADriver/Program.cs" Line="16" Column="9" />
+      <File FileName="RONJADriver/SerialReader.cs" Line="56" Column="76" />
+      <File FileName="RONJADriver/SerialWriter.cs" Line="45" Column="44" />
+      <File FileName="RONJADriver/RONJACoder.cs" Line="209" Column="1" />
+>>>>>>> f4606d62c72eca4e1fa6f7ab8bad097a799c1edd
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
