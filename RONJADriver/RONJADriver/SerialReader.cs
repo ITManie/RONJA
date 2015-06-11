@@ -39,6 +39,7 @@ namespace RONJADriver
         }
 		public string GetData() //Příjem dat, důvod této třídy. V budoucích verzích sloučit se SerialWriterem()
 		{
+			Thread.Sleep (300);
 			return Port.ReadLine();
 		}
 		public void PrintData(int lines)  //Příjem dat a jejich následné tištění přímo na konzolový výstup
