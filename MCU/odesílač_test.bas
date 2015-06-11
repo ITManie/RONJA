@@ -1,21 +1,32 @@
 symbol led = C.1
 
 start:
+	disconnect
 	serrxd b0
-	if b0 = 76 then
-		low led
-		pause 1000
+	reconnect
+	if b0 = 10 then
 		high led
-		pause 1000
+		pause 300
 		low led
-		pause 1000
+	elseif b0 = 13 then
+		high led
+		pause 250
+		low led
+		pause 50
+	elseif b0 = 76 then
+		low led
+		pause 100
+		high led
+		pause 100
+		low led
+		pause 100
 	elseif b0 = 79 then
 		low led
-		pause 1000
+		pause 100
 		high led
-		pause 1500
+		pause 150
 		high led
-		pause 500
+		pause 50
 		low led
 	endif
 	goto start
