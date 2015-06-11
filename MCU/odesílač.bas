@@ -6,63 +6,31 @@ start:
 	select case vstup
 		case "A"
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 250
 			high led
 			pause 50
 		case "B"
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 200
 			high led
 			pause 50
 			low led
 			pause 50
 		case "C"
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 200
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 		case "D"
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 		case "E"
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 			high led
 			pause 50
 			low led
@@ -71,61 +39,35 @@ start:
 			pause 50
 		case "F"
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
 			pause 50
 		case "G"
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 150
 		case "H"
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 		case "I"
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
 			pause 50
 		case "J"
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
 			pause 50
 			low led
@@ -136,67 +78,41 @@ start:
 			pause 50
 		case "K"
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
 			pause 50
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 		case "L"
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 		case "M"
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
 			pause 50
 			high led
 			pause 50
 		case "N"
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 150
 			low led
 			pause 50
 		case "O"
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 150
 			high led
 			pause 50
 		case "P"
@@ -205,11 +121,7 @@ start:
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 			low led
 			pause 50
 		case "Q"
@@ -218,11 +130,7 @@ start:
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 			high led
 			pause 50
 		case "R"
@@ -231,9 +139,7 @@ start:
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
 			pause 50
 			low led
@@ -244,13 +150,9 @@ start:
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 		case "T"
 			low led
 			pause 50
@@ -261,9 +163,7 @@ start:
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 		case "U"
 			low led
 			pause 50
@@ -285,9 +185,7 @@ start:
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
 			pause 50
 		case "W"
@@ -298,44 +196,28 @@ start:
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 150
 		case "X"
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 		case "Y"
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
 			pause 50
 		case "Z"
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
 			pause 50
 			high led
@@ -346,37 +228,23 @@ start:
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 		case "1"
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 150
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 		case "2"
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 150
 			low led
 			pause 50
 			high led
@@ -385,11 +253,7 @@ start:
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 150
 			high led
 			pause 50
 			low led
@@ -398,37 +262,21 @@ start:
 			low led
 			pause 50
 			high led
-			pause 50
+			pause 150
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 		case "5"
 			high led
 			pause 50
 			low led
-			pause 50
+			pause 150
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 		case "6"
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 			low led
 			pause 50
 			high led
@@ -437,11 +285,7 @@ start:
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 			high led
 			pause 50
 			low led
@@ -450,35 +294,23 @@ start:
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 		case "9"
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 		case "+"
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
 			pause 50
 			low led
@@ -489,28 +321,18 @@ start:
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
 			pause 50
 		case "*"
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 150
 		case "/"
 			high led
 			pause 50
@@ -519,11 +341,7 @@ start:
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 150
 		case "="
 			high led
 			pause 50
@@ -532,9 +350,7 @@ start:
 			high led
 			pause 50
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 			high led
 			pause 50
 		case "."
@@ -560,31 +376,23 @@ start:
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 		case ":"
 			high led
 			pause 50
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
-			pause 50
-			low led
-			pause 50
+			pause 100
 		case "?"
 			high led
 			pause 50
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
+			pause 100
 			low led
 			pause 50
 			high led
@@ -595,11 +403,7 @@ start:
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 150
 			low led
 			pause 50
 		case ";"
@@ -608,38 +412,16 @@ start:
 			low led
 			pause 50
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 150
 			high led
 			pause 50
 		case " "
 			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
-			low led
-			pause 50
+			pause 300
 		case "s"
 			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
-			high led
-			pause 50
+			pause 300
+		else
+			sertxd(vstup)
 	endselect
 	goto start
