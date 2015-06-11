@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using System.IO.Ports;
 
 namespace RONJADriver
@@ -24,6 +25,7 @@ namespace RONJADriver
             foreach (char letter in letters)
             {
                 Port.Write(letter.ToString());
+				Thread.Sleep(300);
             }
             Port.WriteLine("");
         }

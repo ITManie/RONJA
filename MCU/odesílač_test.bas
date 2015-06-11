@@ -4,16 +4,16 @@ start:
 	disconnect
 	serrxd b0
 	reconnect
-	if b0 = 10 then
-		high led
-		pause 300
-		low led
-	elseif b0 = 13 then
-		high led
-		pause 250
-		low led
-		pause 50
-	elseif b0 = 76 then
+	;if b0 = 10 then
+	;	high led
+	;	pause 300
+	;	low led
+	;elseif b0 = 13 then
+	;	high led
+	;	pause 250
+	;	low led
+	;	pause 50
+	if b0 = 76 then
 		low led
 		pause 100
 		high led
