@@ -4,7 +4,7 @@ start:
 	disconnect
 	serrxd b0
 	reconnect
-	if b0 = 13 then
+	if b0 = 59 then
 		high led
 		pause 600
 		low led
