@@ -8,7 +8,7 @@ start:
 		high led
 		pause 600
 		low led
-	if b0 = 76 then
+	elseif b0 = 76 then
 		low led
 		pause 100
 		high led
