@@ -7,6 +7,7 @@ namespace RONJADriver
 	{
 		public static void Main (string[] args)
 		{
+			Console.Title = "RONJA Driver";
 			if (args.Length != 0)
 			{
 				if (args.Length == 3)
