@@ -1,7 +1,7 @@
 symbol led = C.1
 
 start:
-	serrxd b0
+	serrxd(b0)
 	if b0 = 59 then
 		high led
 		pause 600

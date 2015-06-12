@@ -1,9 +1,7 @@
 symbol led = C.1
 
 start:
-	disconnect
 	serrxd(b0)
-	reconnect
 	; START bit
 	if b0 = 2 then
 		high led
