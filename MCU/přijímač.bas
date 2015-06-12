@@ -22,6 +22,9 @@ start:
 			let b3 = b2
 			let b2 = b1
 			pause 50
+			if b0 = 12 then
+				let b0 = 1
+			endif
 		elseif b1 < 50 then
 			sertxd("0")
 			inc b0
@@ -38,11 +41,12 @@ start:
 			let b3 = b2
 			let b2 = b1
 			pause 50
-		elseif b0 = 12 then
-			let b0 = 1
+			if b0 = 12 then
+				let b0 = 1
+			endif
 		elseif b1 = 1 and b2 = 1 and b3 = 1 and b4 = 1 and b5 = 1 and b6 = 1 and b7 = 1 and b8 = 1 and b9 = 1 and b10 = 1 and b11 = 1 and b12 = 1 and b13 = 1 then
 			sertxd(13, 10)
-	endif
+		endif
 	next b0
 	goto start
 
