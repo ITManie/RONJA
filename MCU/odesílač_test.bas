@@ -1,9 +1,7 @@
 symbol led = C.1
 
 start:
-	disconnect
 	serrxd b0
-	reconnect
 	if b0 = 59 then
 		high led
 		pause 600
