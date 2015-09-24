@@ -1,0 +1,4 @@
+language: csharp
+solution: RONJADriver/RONJADriver.sln
+mono:
+  - latest
