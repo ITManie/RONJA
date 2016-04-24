@@ -1,7 +1,7 @@
 ﻿<Properties>
   <AuthorInfo Name="Freeman10" Email="adam.rozboril98@gmail.com" Copyright="Freeman10" Company="" Trademark="" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/AssemblyInfo.cs">
     <Files>
       <File FileName="Program.cs" Line="1" Column="1" />
       <File FileName="SerialReader.cs" Line="1" Column="1" />
@@ -11,8 +11,12 @@
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
-          <Node name="RONJADriver" expanded="True" />
+        <State expanded="True">
+          <Node name="RONJADriver" expanded="True">
+            <Node name="Properties" expanded="True">
+              <Node name="AssemblyInfo.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

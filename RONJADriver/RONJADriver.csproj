@@ -12,7 +12,7 @@
     <ReleaseVersion>1.0.0</ReleaseVersion>
     <Description>Debug release of RONJA driver.</Description>
     <SynchReleaseVersion>false</SynchReleaseVersion>
-    <ApplicationIcon>..\..\icon.ico</ApplicationIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
     <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
     <StartupObject>RONJADriver.MainClass</StartupObject>
   </PropertyGroup>
