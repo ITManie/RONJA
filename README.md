@@ -6,7 +6,7 @@
 Project to contest MCU letí 2015.
 
 ## Part list
- - 2x [PICAxe O8M2](http://www.gme.cz/mikrokontroler-picaxe-08m2-p772-029)
+ - 2x [PICAxe 08M2](http://www.gme.cz/mikrokontroler-picaxe-08m2-p772-029)
  - 2x [Fairchild QRD1114](http://www.gme.cz/qrd1114-p523-265)
  - 2x [100R resistor](http://www.gme.cz/rm-100r-0204-0-4w-1-hitano-p119-398)
  - 4x [10k resistor](http://www.gme.cz/rm-10k-0204-0-4w-1-hitano-p119-396)
@@ -18,7 +18,7 @@ Project to contest MCU letí 2015.
 ![Schema](https://raw.githubusercontent.com/ITManie/RONJA/master/eagle/schema.png)
 
 ## Documentation
-Documentation in Czech language can be found in the [docs](https://github.com/ITManie/RONJA/tree/master/docs) folder.
+Documentation in Czech you can found in [docs](https://github.com/ITManie/RONJA/tree/master/docs) directory.
 
 ## License
 RONJA is licensed under the GPL FDL v1.3 license:
