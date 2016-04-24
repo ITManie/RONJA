@@ -1,3 +1,11 @@
+REM Copyright (c)  2015  Roman Ondráček.
+REM Permission is granted to copy, distribute and/or modify this document
+REM under the terms of the GNU Free Documentation License, Version 1.3
+REM or any later version published by the Free Software Foundation;
+REM with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+REM A copy of the license is included in the section entitled "GNU
+REM Free Documentation License".
+
 symbol led = C.1
 
 start:
