@@ -2,15 +2,15 @@ symbol led = C.1
 
 start:
 	serrxd(b0)
-	; START bit
+	REM START bit
 	if b0 = 2 then
 		high led
 		pause 300
-	; Mezera
+	REM Mezera
 	elseif b0 = 32 then
 		low led
 		pause 300
-	; !
+	REM !
 	elseif b0 = 33 then
 		high led
 		pause 50

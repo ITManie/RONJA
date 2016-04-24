@@ -1,10 +1,10 @@
 symbol tranzistor = C.2
 
 start:
-	; Přečte hodnotu napětí na výstupním pinu fototranzistoru
+	REM Přečte hodnotu napětí na výstupním pinu fototranzistoru
 	readadc tranzistor, b1
-	; b0 - cislo cyklu
-	; b1 - aktualní hodnota
+	REM b0 - cislo cyklu
+	REM b1 - aktualní hodnota
 	for b0 = 1 to 12
 		if b1 > 50  then
 			sertxd("1")
