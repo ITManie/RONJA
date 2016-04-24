@@ -1,22 +1,18 @@
 ﻿<Properties>
   <AuthorInfo Name="Freeman10" Email="adam.rozboril98@gmail.com" Copyright="Freeman10" Company="" Trademark="" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RONJADriver/Properties/AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="RONJADriver/Program.cs" Line="1" Column="1" />
-      <File FileName="RONJADriver/SerialReader.cs" Line="1" Column="1" />
-      <File FileName="RONJADriver/SerialWriter.cs" Line="1" Column="1" />
-      <File FileName="RONJADriver/RONJACoder.cs" Line="206" Column="15" />
-      <File FileName="RONJADriver/Properties/AssemblyInfo.cs" Line="17" Column="35" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="SerialReader.cs" Line="1" Column="1" />
+      <File FileName="SerialWriter.cs" Line="1" Column="1" />
+      <File FileName="RONJACoder.cs" Line="1" Column="1" />
+      <File FileName="Properties/AssemblyInfo.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="RONJADriver" expanded="True">
-            <Node name="Properties" expanded="True">
-              <Node name="AssemblyInfo.cs" selected="True" />
-            </Node>
-          </Node>
+        <State expanded="True" selected="True">
+          <Node name="RONJADriver" expanded="True" />
         </State>
       </Pad>
     </Pads>
